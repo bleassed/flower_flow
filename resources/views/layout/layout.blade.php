@@ -19,11 +19,6 @@
                 <ul class="nav">
                     @yield('navigate')
                 </ul>
-
-
-
-
-
         </div>
 
 
@@ -38,6 +33,7 @@
 
         <footer>
 
+        gghdhg
 
         </footer>
 

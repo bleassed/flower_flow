@@ -28,12 +28,39 @@ ul, ul li {
 	list-style: none;
 }
 html, body{
+	height: 100%;
+	width: 100%;
     background-color: var(--color_main);
 }
 
 
 
+/*wapper*/
+
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-auto-rows: minmax(70px, auto) 1fr minmax(70px, auto);
+	grid-template-areas: 
+	"header header header header header header header header header"
+	"main main main main main main main main main"
+	"footer footer footer footer footer footer footer footer footer" ;
+}
+
+
 /*navigate*/
+
+header{
+	grid-area: header;
+	border-bottom: 1px solid #BBBBBF;
+}
+
+.header_blok{
+	padding: 10px;
+}
 
 .nav{
 margin: auto;
@@ -43,4 +70,22 @@ justify-content: space-between;
 
 .nav-link{
     color: #111111;
+}
+
+
+/*main*/
+
+
+main{
+	grid-area: main;
+	flex-direction: 1;
+}
+
+
+
+
+/*footer*/
+
+footer{
+		grid-area: footer;
 }
