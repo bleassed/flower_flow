@@ -9,12 +9,12 @@
 </head>
 <body>
 
-    <div class = "wrapper">
+    <div class="wrapper">
 
         <header>
 
-        <div class = "header_blok">
-            <div class = "header_items">
+        <div class="header_blok">
+            <div class="header_items">
 
                 <ul class="nav">
                     @yield('navigate')
@@ -26,9 +26,9 @@
 
 
         <main>
-
-        @yield('main')
-
+            <div class="main_container">
+                @yield('main')
+            </div>
         </main>
 
         <footer>
