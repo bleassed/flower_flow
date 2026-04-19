@@ -20,6 +20,7 @@
     </li>
     <li class="nav_item">
         <a class="nav-link" href="#">////</a>
+        <div class="logo_footer"><img class="footer_my_logo" src="/image/mylogo.svg"></img></div>
     </li>
 
 

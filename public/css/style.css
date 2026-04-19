@@ -93,3 +93,8 @@ footer{
 	grid-area: footer;
 	border-top: 1px solid #BBBBBF
 }
+
+.footer_my_logo{
+	height: 50px;
+	width: 50px;
+}
