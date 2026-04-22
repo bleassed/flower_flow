@@ -3,13 +3,6 @@
 
 @section('title', 'home')
 
-@section('main')
-
-
-
-@endsection
-
-
 @section('navigate')
 
     <li class="nav_item">
@@ -19,9 +12,36 @@
         <div class="logo_header"><img src="/image/logo1.png"></img></div>
     </li>
     <li class="nav_item">
-        <a class="nav-link" href="#">////</a>
-        <div class="logo_footer"><img class="footer_my_logo" src="/image/mylogo.svg"></img></div>
+        <a class="nav-link" href="#">account</a>
     </li>
+
+
+@endsection
+
+
+@section('main')
+
+
+
+<ul class="nav nav_secondary">
+  <li class="nav-item">
+    <a class="nav-link"  href="#">catalog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">favorites</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">cart of orders</a>
+  </li>
+</ul>
+
+<div class="banner">
+    <img class="banner_image" src="/image/banner/1.jpg">
+
+
+
+</div>
+
 
 
 @endsection

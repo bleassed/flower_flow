@@ -27,11 +27,16 @@ h1, h2, h3, h4, h5, h6, p {
 ul, ul li {
 	list-style: none;
 }
-html, body{
+html{
+	height: 100% !important;
+	width: 100% !important;
+}
+body{
 	height: 100%;
 	width: 100%;
-    background-color: var(--color_main);
+    /* background-color: var(--color_main); */
 }
+
 /*wapper*/
 .wrapper{
 	height: 100%;
@@ -53,13 +58,15 @@ header{
 .header_blok{
 	padding: 10px;
 }
-.nav{
+.nav_firstly{
 	margin: auto;
 	width: 80%;
 	justify-content: space-between;
 }
+
 .nav-link{
     color: #111111;
+	padding: 10px !important;
 }
 .logo_header{
 	width: 70px;
@@ -77,16 +84,25 @@ main{
 	place-items: center;
 }
 .main_container{
-	width: 90%;
-	height: 90%;
-	background-color: antiquewhite;
+	width: 80%;
+	height: 100%;
+}
+.nav_secondary{
+	padding: 10px;
 }
 
+.banner{
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+}
 
-
-
-
-
+.banner_image{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Обрезает изображение, заполняя контейнер */
+	object-position: center; /* Центрирует изображение */
+}
 
 /*footer*/
 footer{
@@ -97,4 +113,46 @@ footer{
 .footer_my_logo{
 	height: 50px;
 	width: 50px;
+}
+
+
+
+
+
+
+
+
+/* Small (sm) – устройства от 576px */
+@media (max-width: 576px) {
+	.nav_firstly{
+		width: 100% !important;
+	}
+	.nav_secondary{
+		padding: 10px;
+	}
+	.main_container{
+		width: 100% !important;
+	}
+  /* стили для экранов шириной ≥ 576px */
+}
+@media (min-width: 576px) {
+
+
+	
+  /* стили для экранов шириной ≥ 576px */
+}
+
+/* Medium (md) – устройства от 768px */
+@media (min-width: 768px) {
+  /* стили для экранов шириной ≥ 768px */
+}
+
+/* Large (lg) – устройства от 992px */
+@media (min-width: 992px) {
+  /* стили для экранов шириной ≥ 992px */
+}
+
+/* Extra large (xl) – устройства от 1200px */
+@media (min-width: 1200px) {
+  /* Стили для экранов шириной ≥ 1200px */
 }

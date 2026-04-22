@@ -16,7 +16,7 @@
         <div class="header_blok">
             <div class="header_items">
 
-                <ul class="nav">
+                <ul class="nav nav_firstly">
                     @yield('navigate')
                 </ul>
         </div>
